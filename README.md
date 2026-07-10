@@ -48,7 +48,6 @@ Vue Frontend Developer с 6+ годами коммерческого опыта 
 ## Контакты
 
 - GitHub: [github.com/emilabsal](https://github.com/emilabsal)
-- Portfolio: [emilabsal.github.io](https://emilabsal.github.io)
 - Telegram: [@Emil313](https://t.me/Emil313)
 - Email: [emil-absalyam.off@yandex.ru](mailto:emil-absalyam.off@yandex.ru)
 
