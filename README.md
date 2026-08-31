@@ -1,88 +1,112 @@
-## Hey there! 👋 I'm Emil Absal
+## Hi there! 👋 I'm Emil — Senior Fullstack Developer
 
-I'm a **Senior Fullstack Developer** with a passion for building scalable, production-ready applications. My sweet spot is the intersection of robust backend architecture and pixel-perfect frontend experiences. I love diving deep into TypeScript, exploring the Nuxt/Vue ecosystem, and crafting bots and APIs that solve real-world problems. When I'm not coding, you'll probably find me experimenting with new tech or contributing to open source. Let's build something amazing together! 🚀
-
----
-
-## ⭐ Featured Projects
-
-### 🎵 [Synthia](https://github.com/emilabsal/synthia) — Telegram Bot for Music Battles
-
-**Synthia** is a powerful Telegram bot designed to organize and run real-time music battles. It allows users to submit tracks, vote within the current round, build playlists, and track their personal stats. The bot automates the entire competition process, making it transparent and engaging for music communities.
-
-**🛠 Tech Stack:**
-- **TypeScript** — ensuring strict typing and code reliability
-- **Prisma ORM** — managing SQLite database (`index.db`) with versioned migrations
-- **Node.js** — runtime environment
-- **Telegram Bot API** — via `node-telegram-bot-api`
-
-**🏗 Architecture & Features:**
-- **Modular design** — separate modules for `addSong`, `currentRound`, `playlists`, and `profile`
-- **Inline keyboards** — intuitive navigation through all bot functions
-- **Automated voting system** — determines winners based on user votes
-- **Playlist management** — create and view curated track collections
-- **User profiles** — display participation statistics and achievements
+Привет! Я — senior fullstack разработчик с глубоким опытом создания сложных веб-приложений и ботов. Мой стек — TypeScript, Vue/Nuxt, Node.js и современные ORM. Я люблю превращать сложные идеи в элегантные, масштабируемые решения — от Telegram-ботов до e-commerce платформ. Добро пожаловать в мой GitHub, здесь живут проекты, которыми я горжусь! 🚀
 
 ---
 
-### 🛍️ [Createx](https://github.com/emilabsal/createx) — Modern E-Commerce Frontend
+## ⭐ Избранные проекты
 
-**Createx** is a cutting-edge online clothing store frontend built with Nuxt.js. It features a fully responsive design, interactive product sliders, and a comprehensive product catalog. The project showcases best practices in Vue ecosystem for building fast, interactive e-commerce interfaces.
+### 🎵 [Synthia — Telegram Bot для музыкальных баттлов](https://github.com/emilabsal/synthia)
 
-**🛠 Tech Stack:**
-- **Nuxt.js 2** — server-side rendering for Vue applications
-- **SCSS** — modular styling architecture with component separation
-- **Vue Awesome Swiper** — smooth product carousels
-- **Vuex** — state management
-- **Nuxt Content** — Markdown-based content management
+**Synthia** — это Telegram-бот, созданный для организации и проведения музыкальных баттлов в реальном времени. Проект позволяет пользователям добавлять треки, голосовать за них в рамках текущего раунда, формировать плейлисты и отслеживать свой профиль. Бот автоматизирует процесс проведения конкурсов, делая его прозрачным и увлекательным.
 
-**🏗 Architecture & Features:**
-- **Component-based architecture** — each UI element (product card, category, slider) is an isolated Vue component
-- **Content-driven** — texts and descriptions stored in Markdown for easy editing
-- **Optimized static hosting** — pre-rendered pages in `dist/`
-- **Interactive sliders** — Trending and Arrivals carousels
-- **SEO-friendly** — server-side rendering for better search visibility
+#### 🛠 Технологический стек
+- **TypeScript** — основной язык разработки, обеспечивающий строгую типизацию и надежность кода.
+- **Prisma ORM** — для работы с базой данных SQLite (файл `index.db`), включая миграции и схему данных.
+- **Node.js** — среда выполнения для бота.
+- **Telegram Bot API** — интеграция с платформой Telegram через библиотеку `node-telegram-bot-api`.
 
----
+#### 🏗 Архитектура и особенности
+Проект построен по модульному принципу: в директории `bot/modules` находятся отдельные модули для управления песнями (`addSong`), текущим раундом (`currentRound`), плейлистами (`playlists`) и профилем пользователя (`profile`). Клавиатуры и константы вынесены в отдельные папки (`keyboards`, `const`), а утилиты (например, `calendar.ts`) — в `utils`. База данных управляется через Prisma с миграциями в `prisma/migrations`, что обеспечивает версионирование схемы.
 
-### 🚀 [Scalexa](https://github.com/emilabsal/scalexa) — Scalable Nuxt 3 Starter Kit
+#### ✨ Основные возможности
+- **Добавление треков** — пользователи могут предлагать песни для участия в баттле.
+- **Голосование за текущий раунд** — система автоматически определяет победителя по итогам голосования.
+- **Управление плейлистами** — создание и просмотр плейлистов с добавленными треками.
+- **Профиль пользователя** — отображение статистики участия и достижений.
+- **Интерактивные клавиатуры** — удобная навигация по функциям бота через inline-кнопки.
 
-**Scalexa** is a modern starter template for rapidly building high-performance web applications on Nuxt 3. It's designed for developers who value clean architecture, TypeScript, and ready-to-use solutions out of the box. Scalexa combines Vue 3 best practices with a modular structure and flexible content configuration.
-
-**🛠 Tech Stack:**
-- **Nuxt 3** — universal Vue applications (SSR/SSG/SPA)
-- **Vue 3** with Composition API and `<script setup>`
-- **TypeScript** — strict typing throughout
-- **Nuxt Content** — file-based CMS via YAML
-- **ESLint** — code linting and formatting
-- **Renovate** — automated dependency updates
-
-**🏗 Architecture & Features:**
-- **Modular structure** — clear separation of `components/`, `pages/`, `content/`, and `plugins/`
-- **Custom plugin** — interactive `img-comparison-slider` for image comparison
-- **Flexible configuration** — via `nuxt.config.ts` and `content.config.ts`
-- **Hot-reload** — fast development experience with TypeScript and ESLint
-- **Open source** — clear licensing for easy adoption
+Проект ориентирован на музыкальные сообщества и организаторов конкурсов, желающих автоматизировать процесс проведения баттлов в Telegram.
 
 ---
 
-### 🎶 [Resonance](https://github.com/emilabsal/Resonance) — Music Clubs & Creators Platform
+### 🛍️ [Createx — Интернет-магазин модной одежды](https://github.com/emilabsal/createx)
 
-**Resonance** is a modern web application for discovering and connecting with music clubs and creative communities. The platform unifies a club catalog, creator profiles, and personalized user accounts in a single intuitive interface.
+#### 📌 Назначение проекта
 
-**🛠 Tech Stack:**
-- **Nuxt 3** (Vue 3 + TypeScript)
-- **Nuxt Layers** — modular architecture
-- **Custom CSS** — with custom animations
-- **Composables** — typed state management
+**Createx** — это современный фронтенд-проект интернет-магазина одежды, разработанный на Nuxt.js. Проект представляет собой адаптивный лендинг с каталогом товаров, категориями и промо-блоками. Основная цель — демонстрация возможностей Vue-экосистемы для создания быстрых и интерактивных e-commerce интерфейсов.
 
-**🏗 Architecture & Features:**
-- **Multi-layer structure** — separates `account` and `clubs` domain areas
-- **Feature-based pages** — catalog, club details, creator profiles, auth, and dashboard
-- **Design prototypes** — `codex/` directory with HTML mockups for rapid UI iteration
-- **Club catalog** — with filtering and detailed cards
-- **Typed data** — club information via TypeScript interfaces and constants
-- **Scalable** — modular expansion through Nuxt Layers
+#### 🛠️ Ключевые технологии и стек
+
+- **Nuxt.js 2** — фреймворк для серверного рендеринга Vue-приложений
+- **SCSS** — модульная архитектура стилей с разделением на компоненты
+- **Vue Awesome Swiper** — слайдеры для каруселей товаров
+- **Vuex** — управление состоянием приложения
+- **Nuxt Content** — работа с контентными файлами (Markdown)
+
+#### 🏗️ Архитектура и особенности реализации
+
+Проект построен по компонентной архитектуре: каждый UI-элемент (карточка товара, категория, слайдер) вынесен в отдельный Vue-компонент. Стили организованы через SCSS-модули с утилитарными классами. Контентная часть (тексты, описания) хранится в Markdown-файлах, что упрощает редактирование без пересборки. Сборка оптимизирована для статического хостинга (dist-папка с предрендеренными страницами).
+
+#### ✨ Основные возможности
+
+- Адаптивная верстка для всех устройств
+- Интерактивные слайдеры с товарами (Trending, Arrivals)
+- Каталог с категориями и фильтрацией
+- Промо-секции с баннерами и CTA-элементами
+- Оптимизированные SVG-иконки и изображения
+- SEO-дружественная структура с серверным рендерингом
+
+---
+
+### 🚀 [Scalexa — Масштабируемый Nuxt 3 Starter Kit](https://github.com/emilabsal/scalexa)
+
+**Scalexa** — это современный стартовый шаблон для быстрого создания производительных веб-приложений на базе Nuxt 3. Проект предназначен для разработчиков, которые ценят чистую архитектуру, TypeScript и готовые решения «из коробки». Scalexa объединяет лучшие практики Vue 3, модульную структуру и гибкую настройку контента.
+
+#### 🛠️ Ключевые технологии и стек
+
+- **Nuxt 3** — фреймворк для универсальных Vue-приложений (SSR/SSG/SPA)
+- **Vue 3** с Composition API и `<script setup>`
+- **TypeScript** — строгая типизация на всём протяжении проекта
+- **Nuxt Content** — файловая CMS для управления контентом через YAML
+- **ESLint** — линтинг и форматирование кода
+- **Renovate** — автоматическое обновление зависимостей
+
+#### 🏗️ Архитектура и особенности реализации
+
+Проект построен по модульному принципу с чётким разделением ответственности: компоненты (`components/`), страницы (`pages/`), контент (`content/`) и плагины (`plugins/`). Особенность реализации — использование кастомного плагина `img-comparison-slider` для интерактивного сравнения изображений, а также гибкая система конфигурации через `nuxt.config.ts` и `content.config.ts`. Структура поддерживает масштабирование за счёт изолированных слоёв и переиспользуемых UI-компонентов.
+
+#### ✨ Основные возможности
+
+- 📄 **Готовая структура** — стартовые страницы, логотип и меню шаблона
+- 🖼️ **Интерактивные компоненты** — слайдер сравнения изображений
+- 📝 **Управление контентом** — редактирование через YAML-файлы без кода
+- ⚡ **Оптимизация** — автоматическая обработка изображений и ассетов
+- 🔧 **Разработка** — hot-reload, TypeScript, ESLint и настройка через Renovate
+- 📦 **Лицензия** — открытый исходный код с понятными условиями использования
+
+---
+
+### 🎵 [Resonance — Каталог клубов и авторов](https://github.com/emilabsal/Resonance)
+
+**Resonance** — это современное веб-приложение для поиска и взаимодействия с музыкальными клубами и творческими сообществами. Платформа объединяет каталог клубов, профили создателей и персонализированные аккаунты пользователей в едином интуитивном интерфейсе.
+
+#### 🛠 Технологический стек
+
+Проект построен на **Nuxt 3** (Vue 3 + TypeScript) с использованием модульной архитектуры через Nuxt Layers. Для стилизации применяются кастомные CSS-решения, а для управления состоянием — композаблы (composables) с типизированными константами.
+
+#### 🏗 Архитектура
+
+Приложение использует **многослойную структуру** (`layers/`), разделяющую доменные области: `account` (пользовательские аккаунты) и `clubs` (клубы с данными и типами). Страницы организованы по принципу feature-based: каталог, детальная страница клуба, профиль создателя, авторизация и личный кабинет. Отдельная директория `codex/` содержит HTML-прототипы дизайна для быстрой итерации UI.
+
+#### ✨ Основные возможности
+
+- **Каталог клубов** с фильтрацией и детальными карточками
+- **Профили создателей** и личные кабинеты пользователей
+- **Система авторизации** с отдельной страницей входа
+- **Адаптивный дизайн** с кастомными CSS-анимациями
+- **Типизированные данные** клубов через константы и TypeScript-интерфейсы
+- **Модульное расширение** через Nuxt Layers для масштабируемости
 
 
 <div align="center">
